@@ -28,4 +28,4 @@ jobs:
           ssh-keyscan -H ${{ secrets.VM_HOST }} >> ~/.ssh/known_hosts
       - name: Run deploy script on VM
         run: |
-         ssh $ {{ secrets.VM_USER }}@${{ secrets.VM_HOST }} "bash /path/to/deploy.sh"
+         ssh $ {{ secrets.VM_USER }}@${{ secrets.VM_HOST }} "bash /home/pritpal/Server-Admin-azure-lab/scripts/deploy.sh"
