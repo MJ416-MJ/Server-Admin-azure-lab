@@ -20,7 +20,7 @@ The last two commands configure the user’s name and their git email to basical
 
 ## 6 The two key concept
 Two separate SSH key pairs are used in the automation, and they work in
-opposite directions. The first lets the server talk to GitHub: Pritpal generates it on the VM, the private half stays on the VM, and the public half is added to the repository as a deploy key so the server can pull code. 
+opposite directions. The first lets the server talk to GitHub: Pritpal generates it on the VM and adds the public half to her GitHub account, so the server can pull code from the repository as a collaborator.
 The second lets GitHub Actions talk to the server: This was generated with 
 `ssh-keygen -t ed25519 -f C:\Users\malco\.ssh\deploy_key -C "github-actions" -N ""`, 
 which stored the private half in the `VM_SSH_KEY` secret, and sent the public half to
