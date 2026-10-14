@@ -58,6 +58,10 @@ Success was responsible for the group contribution documentation and participate
 * Working on a separate Git branch.
 * Committing and pushing the contribution documentation to GitHub.
 * Creating a pull request so the documentation could be reviewed before being merged into `main`.
+* Successfully authenticated to the assigned `success` account on the Azure Linux VM using SSH public-key authentication.
+* Verified the remote session using `whoami`, `hostname`, and `pwd`.
+* Verified that Git version 2.43.0 was installed on the Azure Linux VM.
+* Configured the Git identity for the `success` Linux account using the name and email address associated with the contributor's GitHub account.
 
 
 
